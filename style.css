@@ -1,0 +1,46 @@
+body {
+    display: flex; 
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#calculatorContainer {
+    background-color: #2e3642;
+    padding: 1rem;
+    border-radius: 5px;
+    
+    display: grid;
+}
+
+#displayScreen {
+    background-color: #E9E8E8;
+    height: 6rem;
+    border-radius: 5px;
+    font-size: 2em;
+}
+
+button {
+    background-color: #537FE7;
+    border-radius: 5px;
+    font-size: 1.5em;
+
+}
+
+#buttons {
+    font-family: ;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 20rem;
+    width: 20rem;
+    gap: .5rem
+}
+
+#equals, #delete, #clear {
+    background-color: #C0EEF2;
+}
+
+#clear {
+    height: 4rem;
+}
