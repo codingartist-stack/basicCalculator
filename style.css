@@ -7,7 +7,7 @@ body {
 }
 
 #calculatorContainer {
-    background-color: #2e3642;
+    background-color: #2C3333;
     padding: 1rem;
     border-radius: 5px;
     
@@ -15,17 +15,20 @@ body {
 }
 
 #displayScreen {
-    background-color: #E9E8E8;
+    background-color: #E7F6F2; 
     height: 6rem;
     border-radius: 5px;
     font-size: 2em;
 }
 
 button {
-    background-color: #537FE7;
-    border-radius: 5px;
+    background-color: #395B64;
+    border-radius: 25%;
     font-size: 1.5em;
-
+    color: #E7F6F2;
+}
+button:hover {
+    background-color: #132b32;
 }
 
 #buttons {
@@ -37,8 +40,13 @@ button {
     gap: .5rem
 }
 
-#equals, #delete, #clear {
-    background-color: #C0EEF2;
+.functions {
+    background-color: #A5C9CA;
+    color: #2C3333;
+}
+
+.functions:hover{
+    background-color: #ddf0f1;
 }
 
 #clear {
