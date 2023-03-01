@@ -7,10 +7,9 @@ body {
 }
 
 #calculatorContainer {
-    background-color: #2C3333;
+    background-color: #1a2121;
     padding: 1rem;
     border-radius: 5px;
-    
     display: grid;
 }
 
@@ -24,36 +23,39 @@ body {
 }
 
 button {
-    background-color: #395B64;
+    background-color: #90C8AC;
     border-radius: 25%;
     font-size: 1.5em;
-    color: #E7F6F2;
+    /* color: #E7F6F2; */
+    min-height: 3em;
+    min-width: 3em;
 }
 button:hover {
-    background-color: #132b32;
+    background-color: #4e876b;
 }
 
 #buttons {
-    font-family: ;
+    font-family: monospace;
     display: grid;
+
     /* grid-template-columns: repeat(4, 1fr); */
     grid-template-areas: 
     "seven eight nine multiply"
     "four five six minus"
     "one two three plus"
     "zero decimal divide equal";
-    height: 20rem;
-    width: 20rem;
+    /* height: 20rem;
+    width: 20rem; */
     gap: .5rem
 }
 
 .functions {
-    background-color: #A5C9CA;
-    color: #2C3333;
+    background-color: #73A9AD;
+    /* color: #2C3333; */
 }
 
 .functions:hover{
-    background-color: #ddf0f1;
+    background-color: #39696d;
 }
 
 #clear {

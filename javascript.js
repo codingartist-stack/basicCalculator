@@ -13,6 +13,9 @@ buttons.forEach(button => button.addEventListener(`click`, (e) => {
     if (value === 'CLEAR') {
         calculated = [];
         screen.textContent = `.`
+    } else if (value === '=') {
+        calculated = [];
+        screen.textContent = `should be total`
     } else {
         calculated.push(value);
         equation = calculated.join(``);
