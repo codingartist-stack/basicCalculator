@@ -16,9 +16,11 @@ body {
 
 #displayScreen {
     background-color: #E7F6F2; 
+    padding: .5em;
     height: 6rem;
     border-radius: 5px;
-    font-size: 2em;
+    font-size: 4em;
+    text-align: end;
 }
 
 button {
