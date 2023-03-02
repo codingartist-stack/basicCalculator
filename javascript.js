@@ -12,10 +12,47 @@ buttons.forEach(button => button.addEventListener(`click`, (e) => {
 
     if (value === 'CLEAR') {
         calculated = [];
-        screen.textContent = `.`
+        screen.textContent = ``
     } else if (value === '=') {
-        calculated = [];
-        screen.textContent = `should be total`
+        let answer;
+        let operator;
+        for (let val of calculated) {
+            // is this an operator or a number?
+            // if number, make it an int
+            isNumber = (
+                val !== '+' &&
+                val !== '-' &&
+                val !== '*' &&
+                val !== String.fromCharCode(0xF7)
+            )
+            if (isNumber) {
+                val = parseFloat(val);
+                if (answer === undefined) {
+                    answer = val
+                } else {
+                    switch (operator) {
+                        case '+':
+                            answer += val;
+                            break;
+                        case '-':
+                            answer -= val;
+                            break;
+                        case '*':
+                            answer *= val;
+                            break;
+                        case String.fromCharCode(0xF7):
+                            answer /= val;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            } else {
+                operator = val;
+            }
+        }
+
+        screen.textContent = answer;
     } else {
         calculated.push(value);
         equation = calculated.join(``);
